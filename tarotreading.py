@@ -63,94 +63,123 @@ def _():
         {"name": "Judgement Reversed", "color": "purple", "meaning": "Self-doubt, refusal of self-examination."},
         {"name": "The World", "color": "purple", "meaning": "Completion, integration, travel, accomplishment."},
         {"name": "The World Reversed", "color": "purple", "meaning": "Unfinished goals, lack of closure."},
+    	# Swords - yellow
+    	{"name": "Ace of Swords", "color": "yellow", "meaning": "Breakthroughs, mental clarity, truth."},
+    	{"name": "Ace of Swords Reversed", "color": "yellow", "meaning": "Confusion, brutality, chaos."},
+    	{"name": "Two of Swords", "color": "yellow", "meaning": "Difficult decisions, weighing options."},
+    	{"name": "Two of Swords Reversed", "color": "yellow", "meaning": "Indecision, confusion, stalemate."},
+    	{"name": "Three of Swords", "color": "yellow", "meaning": "Heartbreak, betrayal, grief."},
+    	{"name": "Three of Swords Reversed", "color": "yellow", "meaning": "Recovery, forgiveness, moving on."},
+    	{"name": "Four of Swords", "color": "yellow", "meaning": "Rest, contemplation, restoration."},
+    	{"name": "Four of Swords Reversed", "color": "yellow", "meaning": "Restlessness, burnout, stress."},
+    	{"name": "Five of Swords", "color": "yellow", "meaning": "Conflict, tension, defeat."},
+    	{"name": "Five of Swords Reversed", "color": "yellow", "meaning": "Reconciliation, past resentment."},
+    	{"name": "Six of Swords", "color": "yellow", "meaning": "Transition, moving on, rite of passage."},
+    	{"name": "Six of Swords Reversed", "color": "yellow", "meaning": "Resistance to change, unfinished business."},
+    	{"name": "Seven of Swords", "color": "yellow", "meaning": "Deception, strategy, trickery."},
+    	{"name": "Seven of Swords Reversed", "color": "yellow", "meaning": "Coming clean, rethinking tactics."},
+    	{"name": "Eight of Swords", "color": "yellow", "meaning": "Imprisonment, self-victimization."},
+    	{"name": "Eight of Swords Reversed", "color": "yellow", "meaning": "Freedom, release, self-empowerment."},
+    	{"name": "Nine of Swords", "color": "yellow", "meaning": "Anxiety, nightmares, fear."},
+    	{"name": "Nine of Swords Reversed", "color": "yellow", "meaning": "Inner turmoil, deep fears released."},
+    	{"name": "Ten of Swords", "color": "yellow", "meaning": "Painful endings, betrayal."},
+    	{"name": "Ten of Swords Reversed", "color": "yellow", "meaning": "Recovery, regeneration, resisting ruin."},
+    	{"name": "Page of Swords", "color": "yellow", "meaning": "Curiosity, intellect, new ideas."},
+    	{"name": "Page of Swords Reversed", "color": "yellow", "meaning": "Deception, all talk, haste."},
+    	{"name": "Knight of Swords", "color": "yellow", "meaning": "Ambition, action, fast-thinking."},
+    	{"name": "Knight of Swords Reversed", "color": "yellow", "meaning": "Restless, unfocused, impulsive."},
+    	{"name": "Queen of Swords", "color": "yellow", "meaning": "Perceptive, independent, direct."},
+    	{"name": "Queen of Swords Reversed", "color": "yellow", "meaning": "Cold-hearted, cruel, bitterness."},
+    	{"name": "King of Swords", "color": "yellow", "meaning": "Mental clarity, truth, authority."},
+    	{"name": "King of Swords Reversed", "color": "yellow", "meaning": "Manipulative, ruthless, misuse of power."},		
+    	# Cups - blue	
+    	{"name": "Ace of Cups", "color": "blue", "meaning": "New feelings, spirituality, intuition."},
+    	{"name": "Ace of Cups Reversed", "color": "blue", "meaning": "Emotional loss, blocked creativity."},
+    	{"name": "Two of Cups", "color": "blue", "meaning": "Unity, partnership, connection."},
+    	{"name": "Two of Cups Reversed", "color": "blue", "meaning": "Imbalance, tension, breakup."},
+    	{"name": "Three of Cups", "color": "blue", "meaning": "Friendship, celebration, community."},
+    	{"name": "Three of Cups Reversed", "color": "blue", "meaning": "Overindulgence, gossip, isolation."},
+    	{"name": "Four of Cups", "color": "blue", "meaning": "Apathy, contemplation, disconnection."},
+    	{"name": "Four of Cups Reversed", "color": "blue", "meaning": "Sudden awareness, choosing happiness."},
+    	{"name": "Five of Cups", "color": "blue", "meaning": "Regret, grief, disappointment."},
+    	{"name": "Five of Cups Reversed", "color": "blue", "meaning": "Acceptance, moving on, finding peace."},
+    	{"name": "Six of Cups", "color": "blue", "meaning": "Nostalgia, memories, childhood."},
+    	{"name": "Six of Cups Reversed", "color": "blue", "meaning": "Stuck in the past, unrealistic."},
+    	{"name": "Seven of Cups", "color": "blue", "meaning": "Choices, fantasy, illusion."},
+    	{"name": "Seven of Cups Reversed", "color": "blue", "meaning": "Clarity, reality, decisiveness."},
+    	{"name": "Eight of Cups", "color": "blue", "meaning": "Withdrawal, introspection, journey."},
+    	{"name": "Eight of Cups Reversed", "color": "blue", "meaning": "Fear of change, stagnation."},
+    	{"name": "Nine of Cups", "color": "blue", "meaning": "Contentment, satisfaction, success."},
+    	{"name": "Nine of Cups Reversed", "color": "blue", "meaning": "Greed, dissatisfaction, smugness."},
+    	{"name": "Ten of Cups", "color": "blue", "meaning": "Harmony, marriage, happiness."},
+    	{"name": "Ten of Cups Reversed", "color": "blue", "meaning": "Broken relationships, domestic conflict."},
+    	{"name": "Page of Cups", "color": "blue", "meaning": "Happy news, sensitivity, dreamer."},
+    	{"name": "Page of Cups Reversed", "color": "blue", "meaning": "Insecurity, emotional immaturity."},
+    	{"name": "Knight of Cups", "color": "blue", "meaning": "Romance, charm, following heart."},
+    	{"name": "Knight of Cups Reversed", "color": "blue", "meaning": "Jealousy, moodiness, unrealistic."},
+    	{"name": "Queen of Cups", "color": "blue", "meaning": "Compassionate, nurturing, caring."},
+    	{"name": "Queen of Cups Reversed", "color": "blue", "meaning": "Insecurity, co-dependency."},
+    	{"name": "King of Cups", "color": "blue", "meaning": "Emotionally balanced, diplomatic."},
+    	{"name": "King of Cups Reversed", "color": "blue", "meaning": "Emotional manipulation, moodiness."},		
+    	# Wands - red
+    	{"name": "Ace of Wands", "color": "red", "meaning": "Inspiration, new opportunities, growth."},
+    	{"name": "Ace of Wands Reversed", "color": "red", "meaning": "Delays, lack of direction."},
+    	{"name": "Two of Wands", "color": "red", "meaning": "Planning, decisions, discovery."},
+    	{"name": "Two of Wands Reversed", "color": "red", "meaning": "Fear of unknown, lack of planning."},
+    	{"name": "Three of Wands", "color": "red", "meaning": "Expansion, foresight, progress."},
+    	{"name": "Three of Wands Reversed", "color": "red", "meaning": "Obstacles, delays, frustration."},
+    	{"name": "Four of Wands", "color": "red", "meaning": "Celebration, home, harmony."},
+    	{"name": "Four of Wands Reversed", "color": "red", "meaning": "Conflict at home, instability."},
+    	{"name": "Five of Wands", "color": "red", "meaning": "Competition, conflict, tension."},
+    	{"name": "Five of Wands Reversed", "color": "red", "meaning": "Avoiding conflict, compromise."},
+    	{"name": "Six of Wands", "color": "red", "meaning": "Success, public recognition."},
+    	{"name": "Six of Wands Reversed", "color": "red", "meaning": "Ego, lack of recognition."},
+    	{"name": "Seven of Wands", "color": "red", "meaning": "Challenge, competition, perseverance."},
+    	{"name": "Seven of Wands Reversed", "color": "red", "meaning": "Giving up, overwhelmed."},
+    	{"name": "Eight of Wands", "color": "red", "meaning": "Action, movement, fast-paced change."},
+    	{"name": "Eight of Wands Reversed", "color": "red", "meaning": "Delays, frustration, resisting change."},
+    	{"name": "Nine of Wands", "color": "red", "meaning": "Resilience, persistence, test of faith."},
+    	{"name": "Nine of Wands Reversed", "color": "red", "meaning": "Exhaustion, fatigue."},
+    	{"name": "Ten of Wands", "color": "red", "meaning": "Burden, responsibility, stress."},
+    	{"name": "Ten of Wands Reversed", "color": "red", "meaning": "Relief, release, letting go."},
+    	{"name": "Page of Wands", "color": "red", "meaning": "Inspiration, discovery, enthusiasm."},
+    	{"name": "Page of Wands Reversed", "color": "red", "meaning": "Lack of direction, procrastination."},
+    	{"name": "Knight of Wands", "color": "red", "meaning": "Energy, passion, adventure."},
+    	{"name": "Knight of Wands Reversed", "color": "red", "meaning": "Recklessness, anger, delays."},
+    	{"name": "Queen of Wands", "color": "red", "meaning": "Confidence, determination, joy."},
+    	{"name": "Queen of Wands Reversed", "color": "red", "meaning": "Jealousy, selfishness, insecurity."},
+    	{"name": "King of Wands", "color": "red", "meaning": "Leadership, vision, honor."},
+    	{"name": "King of Wands Reversed", "color": "red", "meaning": "Impulsiveness, overbearing."},		
+    	# Pentacles - green
+    	{"name": "Ace of Pentacles", "color": "green", "meaning": "New financial or career opportunity."},
+    	{"name": "Ace of Pentacles Reversed", "color": "green", "meaning": "Lost opportunity, lack of planning."},
+    	{"name": "Two of Pentacles", "color": "green", "meaning": "Balance, adaptability, time management."},
+    	{"name": "Two of Pentacles Reversed", "color": "green", "meaning": "Disorganization, financial instability."},
+    	{"name": "Three of Pentacles", "color": "green", "meaning": "Teamwork, collaboration, building."},
+    	{"name": "Three of Pentacles Reversed", "color": "green", "meaning": "Lack of teamwork, disorganization."},
+    	{"name": "Four of Pentacles", "color": "green", "meaning": "Saving, security, conservatism."},
+    	{"name": "Four of Pentacles Reversed", "color": "green", "meaning": "Greed, financial fear, scarcity."},
+    	{"name": "Five of Pentacles", "color": "green", "meaning": "Poverty, insecurity, worry."},
+    	{"name": "Five of Pentacles Reversed", "color": "green", "meaning": "Recovery, improvement."},
+    	{"name": "Six of Pentacles", "color": "green", "meaning": "Giving, receiving, generosity."},
+    	{"name": "Six of Pentacles Reversed", "color": "green", "meaning": "Strings attached, debt, inequality."},
+    	{"name": "Seven of Pentacles", "color": "green", "meaning": "Patience, hard work, investment."},
+    	{"name": "Seven of Pentacles Reversed", "color": "green", "meaning": "Lack of reward, impatience."},
+    	{"name": "Eight of Pentacles", "color": "green", "meaning": "Skill development, mastery, diligence."},
+    	{"name": "Eight of Pentacles Reversed", "color": "green", "meaning": "Perfectionism, lack of focus."},
+    	{"name": "Nine of Pentacles", "color": "green", "meaning": "Abundance, luxury, self-sufficiency."},
+    	{"name": "Nine of Pentacles Reversed", "color": "green", "meaning": "Overinvestment, setbacks."},
+    	{"name": "Ten of Pentacles", "color": "green", "meaning": "Wealth, legacy, family, establishment."},
+    	{"name": "Ten of Pentacles Reversed", "color": "green", "meaning": "Financial failure, instability."},
+    	{"name": "Page of Pentacles", "color": "green", "meaning": "Ambition, diligence, financial news."},
+    	{"name": "Page of Pentacles Reversed", "color": "green", "meaning": "Laziness, foolishness."},
+    	{"name": "Knight of Pentacles", "color": "green", "meaning": "Hard work, productivity, routine."},
+    	{"name": "Knight of Pentacles Reversed", "color": "green", "meaning": "Laziness, obsession."},
+    	{"name": "Queen of Pentacles", "color": "green", "meaning": "Nurturing, practicality, providing."},
+    	{"name": "Queen of Pentacles Reversed", "color": "green", "meaning": "Self-centeredness, imbalance."},
+    	{"name": "King of Pentacles", "color": "green", "meaning": "Security, control, leadership."},
+    	{"name": "King of Pentacles Reversed", "color": "green", "meaning": "Greed, stubbornness."},
     ]
-
-    # Arcani Minori
-    suits = {
-        "Swords": {
-            "color": "yellow",
-            "meanings": {
-                "Ace": ("Breakthroughs, mental clarity, truth.", "Confusion, brutality, chaos."),
-                "Two": ("Difficult decisions, weighing options.", "Indecision, confusion, stalemate."),
-                "Three": ("Heartbreak, betrayal, grief.", "Recovery, forgiveness, moving on."),
-                "Four": ("Rest, contemplation, restoration.", "Restlessness, burnout, stress."),
-                "Five": ("Conflict, tension, defeat.", "Reconciliation, past resentment."),
-                "Six": ("Transition, moving on, rite of passage.", "Resistance to change, unfinished business."),
-                "Seven": ("Deception, strategy, trickery.", "Coming clean, rethinking tactics."),
-                "Eight": ("Imprisonment, self-victimization.", "Freedom, release, self-empowerment."),
-                "Nine": ("Anxiety, nightmares, fear.", "Inner turmoil, deep fears released."),
-                "Ten": ("Painful endings, betrayal.", "Recovery, regeneration, resisting ruin."),
-                "Page": ("Curiosity, intellect, new ideas.", "Deception, all talk, haste."),
-                "Knight": ("Ambition, action, fast-thinking.", "Restless, unfocused, impulsive."),
-                "Queen": ("Perceptive, independent, direct.", "Cold-hearted, cruel, bitterness."),
-                "King": ("Mental clarity, truth, authority.", "Manipulative, ruthless, misuse of power."),
-            },
-        },
-        "Cups": {
-            "color": "blue",
-            "meanings": {
-                "Ace": ("New feelings, spirituality, intuition.", "Emotional loss, blocked creativity."),
-                "Two": ("Unity, partnership, connection.", "Imbalance, tension, breakup."),
-                "Three": ("Friendship, celebration, community.", "Overindulgence, gossip, isolation."),
-                "Four": ("Apathy, contemplation, disconnection.", "Sudden awareness, choosing happiness."),
-                "Five": ("Regret, grief, disappointment.", "Acceptance, moving on, finding peace."),
-                "Six": ("Nostalgia, memories, childhood.", "Stuck in the past, unrealistic."),
-                "Seven": ("Choices, fantasy, illusion.", "Clarity, reality, decisiveness."),
-                "Eight": ("Withdrawal, introspection, journey.", "Fear of change, stagnation."),
-                "Nine": ("Contentment, satisfaction, success.", "Greed, dissatisfaction, smugness."),
-                "Ten": ("Harmony, marriage, happiness.", "Broken relationships, domestic conflict."),
-                "Page": ("Happy news, sensitivity, dreamer.", "Insecurity, emotional immaturity."),
-                "Knight": ("Romance, charm, following heart.", "Jealousy, moodiness, unrealistic."),
-                "Queen": ("Compassionate, nurturing, caring.", "Insecurity, co-dependency."),
-                "King": ("Emotionally balanced, diplomatic.", "Emotional manipulation, moodiness."),
-            },
-        },
-        "Wands": {
-            "color": "red",
-            "meanings": {
-                "Ace": ("Inspiration, new opportunities, growth.", "Delays, lack of direction."),
-                "Two": ("Planning, decisions, discovery.", "Fear of unknown, lack of planning."),
-                "Three": ("Expansion, foresight, progress.", "Obstacles, delays, frustration."),
-                "Four": ("Celebration, home, harmony.", "Conflict at home, instability."),
-                "Five": ("Competition, conflict, tension.", "Avoiding conflict, compromise."),
-                "Six": ("Success, public recognition.", "Ego, lack of recognition."),
-                "Seven": ("Challenge, competition, perseverance.", "Giving up, overwhelmed."),
-                "Eight": ("Action, movement, fast-paced change.", "Delays, frustration, resisting change."),
-                "Nine": ("Resilience, persistence, test of faith.", "Exhaustion, fatigue."),
-                "Ten": ("Burden, responsibility, stress.", "Relief, release, letting go."),
-                "Page": ("Inspiration, discovery, enthusiasm.", "Lack of direction, procrastination."),
-                "Knight": ("Energy, passion, adventure.", "Recklessness, anger, delays."),
-                "Queen": ("Confidence, determination, joy.", "Jealousy, selfishness, insecurity."),
-                "King": ("Leadership, vision, honor.", "Impulsiveness, overbearing."),
-            },
-        },
-        "Pentacles": {
-            "color": "green",
-            "meanings": {
-                "Ace": ("New financial or career opportunity.", "Lost opportunity, lack of planning."),
-                "Two": ("Balance, adaptability, time management.", "Disorganization, financial instability."),
-                "Three": ("Teamwork, collaboration, building.", "Lack of teamwork, disorganization."),
-                "Four": ("Saving, security, conservatism.", "Greed, financial fear, scarcity."),
-                "Five": ("Poverty, insecurity, worry.", "Recovery, improvement."),
-                "Six": ("Giving, receiving, generosity.", "Strings attached, debt, inequality."),
-                "Seven": ("Patience, hard work, investment.", "Lack of reward, impatience."),
-                "Eight": ("Skill development, mastery, diligence.", "Perfectionism, lack of focus."),
-                "Nine": ("Abundance, luxury, self-sufficiency.", "Overinvestment, setbacks."),
-                "Ten": ("Wealth, legacy, family, establishment.", "Financial failure, instability."),
-                "Page": ("Ambition, diligence, financial news.", "Laziness, foolishness."),
-                "Knight": ("Hard work, productivity, routine.", "Laziness, obsession."),
-                "Queen": ("Nurturing, practicality, providing.", "Self-centeredness, imbalance."),
-                "King": ("Security, control, leadership.", "Greed, stubbornness."),
-            },
-        },
-    }
-
-    # Aggiunta automatica delle carte minori al mazzo
-    for suit, data in suits.items():
-        for rank, (upright, reversed_meaning) in data["meanings"].items():
-            tarot_cards.append({"name": f"{rank} of {suit}", "color": data["color"], "meaning": upright})
-            tarot_cards.append({"name": f"{rank} of {suit} Reversed", "color": data["color"], "meaning": reversed_meaning})
-
     return (tarot_cards,)
 
 
@@ -195,20 +224,59 @@ def _(
     random,
     tarot_cards,
 ):
-    def show_cards():
-        draw_button.value  # trigger re-render
-        selected_cards = random.sample(tarot_cards, 3)
+    #def show_cards():
+    draw_button.value  # trigger re-render
+    selected_cards = random.sample(tarot_cards, 3)
 
-        images = mo.hstack([
-            mo.image(
-                src=f"data:image/png;base64,{pil_to_base64(generate_card_image(card))}",
-                caption=f"{pos}: {card['name']}"
-            ) for pos, card in zip(positions, selected_cards)
-        ])
+    images = mo.hstack([
+        mo.image(
+            src=f"data:image/png;base64,{pil_to_base64(generate_card_image(card))}",
+            caption=f"{pos}: {card['name']}"
+        ) for pos, card in zip(positions, selected_cards)
+    ])
 
-        return mo.vstack([images])
+    image_stack = mo.vstack([images])
 
-    mo.vstack([draw_button, show_cards()])
+
+    mo.vstack([draw_button, image_stack])
+    return (selected_cards,)
+
+
+@app.cell
+def _(mo, selected_cards):
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+
+    model_name = "Qwen/Qwen2.5-0.5B-Instruct"
+
+    model = AutoModelForCausalLM.from_pretrained(
+        model_name,
+        torch_dtype="auto",
+        device_map="auto"
+    )
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+
+    messages = [
+        {"role": "system", "content": "You are a helpful assistant. Act as a tarot reader. Be creative with your response. I will provide a list of 3 cards and their meanings each referring to past, present or future, respectively. Tell a story and don't print a list"},
+        {"role": "user", "content": f"TELL ME ABOUT MY STORY & LIFE. PAST: Card:{selected_cards[0]["name"]} Meaning:{selected_cards[0]["meaning"]}; PRESENT: Card:{selected_cards[1]["name"]} Meaning:{selected_cards[1]["meaning"]}; FUTURE: Card:{selected_cards[2]["name"]} Meaning:{selected_cards[2]["meaning"]};"   }
+    ]
+    text = tokenizer.apply_chat_template(
+        messages,
+        tokenize=False,
+        add_generation_prompt=True
+    )
+    model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+
+    generated_ids = model.generate(
+        **model_inputs,
+        max_new_tokens=512
+    )
+    generated_ids = [
+        output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
+    ]
+
+    response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+
+    mo.md(response)
     return
 
 
