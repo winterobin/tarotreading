@@ -246,35 +246,40 @@ def _(
 def _(mo, selected_cards):
     from transformers import AutoModelForCausalLM, AutoTokenizer
 
-    model_name = "Qwen/Qwen2.5-0.5B-Instruct"
-
-    model = AutoModelForCausalLM.from_pretrained(
-        model_name,
-        torch_dtype="auto",
-        device_map="auto"
-    )
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-
-    messages = [
-        {"role": "system", "content": "You are a helpful assistant. Act as a tarot reader. Be creative with your response. I will provide a list of 3 cards and their meanings each referring to past, present or future, respectively. Tell a story and don't print a list"},
-        {"role": "user", "content": f"TELL ME ABOUT MY STORY & LIFE. PAST: Card:{selected_cards[0]["name"]} Meaning:{selected_cards[0]["meaning"]}; PRESENT: Card:{selected_cards[1]["name"]} Meaning:{selected_cards[1]["meaning"]}; FUTURE: Card:{selected_cards[2]["name"]} Meaning:{selected_cards[2]["meaning"]};"   }
-    ]
-    text = tokenizer.apply_chat_template(
-        messages,
-        tokenize=False,
-        add_generation_prompt=True
-    )
-    model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
-
-    generated_ids = model.generate(
-        **model_inputs,
-        max_new_tokens=512
-    )
-    generated_ids = [
-        output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
-    ]
-
-    response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
+    with mo.status.spinner(subtitle="Talking with stars ✨ ...") as _spinner:
+    
+        model_name = "Qwen/Qwen2.5-0.5B-Instruct"
+    
+        model = AutoModelForCausalLM.from_pretrained(
+            model_name,
+            torch_dtype="auto",
+            device_map="auto"
+        )
+        tokenizer = AutoTokenizer.from_pretrained(model_name)
+    
+        messages = [
+            {"role": "system", "content": "You are a helpful assistant. Act as a tarot reader and fortune teller. Be creative with your response. The user will provide a list of 3 cards and their meanings each referring to past, present or future, respectively. Tell the user a story about them and don't print a list"},
+            {"role": "user", "content": f"REFER TO ME IN SECOND PERSON. TELL ME MY FORTUNE AND DO A CREATIVE AND MISTERIOUS READING. HERE ARE THE CARDS I CHOOSE: PAST: Card:{selected_cards[0]["name"]} Meaning:{selected_cards[0]["meaning"]}; PRESENT: Card:{selected_cards[1]["name"]} Meaning:{selected_cards[1]["meaning"]}; FUTURE: Card:{selected_cards[2]["name"]} Meaning:{selected_cards[2]["meaning"]};"   }
+        ]
+        text = tokenizer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True
+        )
+    
+        model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+    
+        _spinner.update(subtitle="Channelling spirits 🔮 ...")
+    
+        generated_ids = model.generate(
+            **model_inputs,
+            max_new_tokens=512
+        )
+        generated_ids = [
+            output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
+        ]
+    
+        response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
 
     mo.md(response)
     return
