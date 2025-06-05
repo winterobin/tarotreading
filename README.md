@@ -6,30 +6,50 @@ This is a simple interactive **Tarot Card Reader** built with [Marimo](https://w
 
 ## 🧠 Features
 
-- Draw 3 random tarot cards with a single button click.
-- Covers both **Major Arcana** and **Minor Arcana** cards.
-- Generates simple card images using `PIL` with color-coded suits.
-- Includes both upright and reversed card meanings.
-- Fully interactive with a GUI built using Marimo.
+- 🔮 Draw 3 random tarot cards with a single button click.
+- 🃏 Covers both **Major Arcana** and **Minor Arcana** cards.
+- 🎨 Generates simple card images using `PIL` with color-coded suits.
+- ↕️ Includes both upright and reversed card meanings.
+- 🖥️ Fully interactive with a GUI built using Marimo.
+- 🤖 Uses a local LLM via Hugging Face Transformers for creative readings.
 
 ---
 
 ## 🔧 Requirements
 
-- Python 3.8+
-- Marimo ≥ 0.13.15
-
-Other required Python packages:
+- 🐍 Python 3.12+
+- 🦄 Marimo ≥ 0.13.15
+- [uv](https://github.com/astral-sh/uv) (for fast package management)
 - `Pillow` (for image generation)
-- `base64` (standard)
-- `random` (standard)
+- `transformers`, `accelerate`, `vllm` (for local LLM)
+- `base64`, `random` (standard library)
 
 ---
 
-## 🚀 Installation
+## 🚀 Local Installation 
 
-Clone this repository:
+1.  🛠️ **Install [uv](https://github.com/astral-sh/uv)**
+2. ♊ **Clone this repository**
+```bash
+git clone https://github.com/winterobin/tarotreading.git
+cd tarotreading
+```
+
+
+3. ▶️ **Running the App**
 
 ```bash
-git clone https://github.com/yourusername/tarot-card-reader.git
-cd tarot-card-reader
+uvx marimo run tarotreading.py
+```
+
+
+4. ✏️ **Editing the App**
+
+
+```bash
+uvx marimo edit
+```
+
+---
+
+Enjoy your mystical tarot readings! ✨
